@@ -36,10 +36,16 @@ function noValentine() {
     let noButton = document.getElementById('noBut');
     switch(noCount) {
         case 1:
-            noButton.innerHTML = 'One';
+            noButton.innerHTML = 'please reconsider';
             break;
         case 2:
-            noButton.innerHTML = 'Two';
+            noButton.innerHTML = 'PLEASE OH MY GOD BE MY VALENTINE IM GONNA FUCKING CRY!!!';
+            break;
+        case 3:
+            noButton.innerHTML = 'IM NOT GONNA ASK AGAIN, WOMAN!! >:(';
+            break;
+        case 4:
+            noButton.remove();
             break;
     }
 }
