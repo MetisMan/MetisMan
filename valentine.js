@@ -8,7 +8,12 @@ function load() {
 let noCount = 0;
 
 function yesValentine() {
-    document.getElementsByTagName('button').remove();
+    document.getElementById('yesBut').remove();
+    var element =  document.getElementById('noBut');
+    if (typeof(element) != 'undefined' && element != null)
+    {
+        document.getElementById('noBut').remove();
+    }
     document.getElementById('subtitle').innerHTML = 'YAYYY I LOVE YOU SO MUCH BABY!!! HAPPY VALENTINES DAY <3';
 }
 
