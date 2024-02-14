@@ -5,7 +5,6 @@ function load() {
 }
 
 let noCount = 0;
-let noButton = document.getElementById('noBut');
 // function yesValentine() {
 // // delete buttons, give big yippee!!
 // }
@@ -34,6 +33,7 @@ let noButton = document.getElementById('noBut');
 
 function noValentine() {
     noCount += 1;
+    let noButton = document.getElementById('noBut');
     switch(noCount) {
         case 1:
             noButton.innerHTML = 'One';
