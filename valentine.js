@@ -31,7 +31,7 @@ function load() {
 
 
 function noValentine() {
-    var noButton = document.getElementById('no');
+    var noButton = document.getElementById('noBut');
     var noCount = 0;
     noCount += 1;
     switch(noCount) {
