@@ -1,9 +1,8 @@
-// document.addEventListener('DOMContentLoaded', load);
+document.addEventListener('DOMContentLoaded', load);
 
-// function load() {
-//     document.getElementById('yes').addEventListener("click", yesValentine);
-//     document.getElementById('no').addEventListener("click", noValentine);
-// }
+function load() {
+    document.getElementById('noBut').addEventListener("click", noValentine);
+}
 
 // function yesValentine() {
 // // delete buttons, give big yippee!!
@@ -31,20 +30,21 @@
 // }
 
 
-
-var noButton = document.getElementById('no');
-var noCount = 0;
-noButton.addEventListener('click', function(e) {
-    e.preventDefault();
-    noCount += 1;
-    switch(noCount) {
-        case 1:
-            noButton.innerHTML = 'One';
-            break;
-        case 2:
-            noButton.innerHTML = 'Two';
-            break;
-        default:
-            noButton.innerHTML = 'More than 2';
-        }
-}, false);
+function noValentine() {
+    var noButton = document.getElementById('no');
+    var noCount = 0;
+    noButton.addEventListener('click', function(e) {
+        e.preventDefault();
+        noCount += 1;
+        switch(noCount) {
+            case 1:
+                noButton.innerHTML = 'One';
+                break;
+            case 2:
+                noButton.innerHTML = 'Two';
+                break;
+            default:
+                noButton.innerHTML = 'More than 2';
+            }
+    }, false);
+}
