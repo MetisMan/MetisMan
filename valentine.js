@@ -3,6 +3,8 @@ document.addEventListener('DOMContentLoaded', load);
 function load() {
     document.getElementById('yes').addEventListener("click", yesValentine);
     document.getElementById('no').addEventListener("click", noValentine);
+    var noCount = 0;
+    var yesCount = 0;
 }
 
 function yesValentine() {
