@@ -2,34 +2,16 @@ document.addEventListener('DOMContentLoaded', load);
 
 function load() {
     document.getElementById('noBut').addEventListener("click", noValentine);
+    document.getElementById('yesBut').addEventListener("click", yesValentine);
 }
 
 let noCount = 0;
-// function yesValentine() {
-// // delete buttons, give big yippee!!
-// }
 
-// function noValentine() {
-// var noCount;
-// noCount += 1;
-
-// switch(noCount) {
-//     case 1:
-//         document.getElementById('no').innerHTML = 'please reconsider';
-//         break;
-//     case 2:
-//         document.getElementById('no').innerHTML = 'PLEASE BE MY VALENTINE EMILY?!?!?!?';
-//         break;
-//     case 3:
-//         document.getElementById('no').innerHTML = 'IM NOT GONNA ASK AGAIN BITCH';
-//         break;
-//     case 4:
-//         document.getElementById('no').remove();
-//         break;
-// }
-
-// }
-
+function yesValentine() {
+    document.getElementById('yesBut').remove();
+    document.getElementById('noBut').remove();
+    document.getElementById('subtitle').innerHTML = 'YAYYY I LOVE YOU SO MUCH BABY!!! HAPPY VALENTINES DAY <3';
+}
 
 function noValentine() {
     noCount += 1;
