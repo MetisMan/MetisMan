@@ -33,18 +33,13 @@ function load() {
 function noValentine() {
     var noButton = document.getElementById('no');
     var noCount = 0;
-    noButton.addEventListener('click', function(e) {
-        e.preventDefault();
-        noCount += 1;
-        switch(noCount) {
-            case 1:
-                noButton.innerHTML = 'One';
-                break;
-            case 2:
-                noButton.innerHTML = 'Two';
-                break;
-            default:
-                noButton.innerHTML = 'More than 2';
-            }
-    }, false);
+    noCount += 1;
+    switch(noCount) {
+        case 1:
+            noButton.innerHTML = 'One';
+            break;
+        case 2:
+            noButton.innerHTML = 'Two';
+            break;
+    }
 }
