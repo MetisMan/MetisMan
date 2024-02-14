@@ -10,8 +10,7 @@ function yesValentine() {
 }
 
 function noValentine() {
-let noCount;
-noCount++;
+noCount += 1;
 
 switch(noCount) {
     case 1:
