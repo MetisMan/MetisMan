@@ -15,6 +15,9 @@ function yesValentine() {
         document.getElementById('noBut').remove();
     }
     document.getElementById('subtitle').innerHTML = 'YAYYY I LOVE YOU SO MUCH BABY!!! HAPPY VALENTINES DAY <3';
+    let img = document.createElement('img');
+    img.src = 'images/pinguim.gif';
+    document.getElementById('body').appendChild(img);
 }
 
 function noValentine() {
